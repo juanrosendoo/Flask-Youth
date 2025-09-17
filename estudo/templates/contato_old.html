@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contatos</title>
+    </head>
+    <body>
+
+        <div class="formularios">
+
+            <h3>Formulário GET</h3>
+
+            <form action="" method="get">
+                <div>
+                    Digite algo para pesquisar:
+                    <input type="text" name="pesquisa" id="">
+                    <button type="submit">Pesquisar</button>
+                </div>
+            </form>
+
+            <p>Você pesquisou: {{context["pesquisa"]}}</p>
+
+            <hr>
+            <hr>
+
+            <h3>Formulário POST</h3>
+
+            <form action="" method="post">
+                <div>
+                    Digite algo para pesquisar:
+                    <input type="text" name="pesquisa" id="">
+                    <button type="submit">Pesquisar</button>
+                </div>
+            </form>
+
+        </div>
+
+
+        <div>
+            <h3>Formulário POST v2.0</h3>
+
+            <form method="post">
+                <label>Nome:</label>
+                <input type="text" name="nome" required>
+                <label>E-Mail:</label>
+                <input type="email" name="email" required>
+                <br><br>
+                <label>Assunto:</label>
+                <input type="text" name="assunto">
+                <br><br>
+                <label>Mensagem:</label>
+                <input type="text" name="mensagem">
+                <br><br>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+
+    </body>
+</html>
